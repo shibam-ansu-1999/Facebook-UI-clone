@@ -1,0 +1,281 @@
+
+
+body {
+    background: gray;
+}
+
+nav {
+    background: rgb(41, 41, 41);
+}
+
+.navbar-expand-lg {
+    width: 100vw;
+}
+
+/* .nav-bar-responsive {
+    display: none;
+} */
+.drop-down {
+    background: rgb(49, 49, 49);
+    width: 30vw;
+    position: absolute;
+    right: 0;
+    display: none;
+    z-index: 1;
+}
+
+.drop-item:hover .drop-down{
+    display: block;
+}
+
+.drop-down-mb {
+    background: rgb(49, 49, 49);
+    width: 80vw;
+    position: absolute;
+    right: 2vh;
+    display: none;
+    z-index: 1;
+}
+.drop-item:hover .drop-down-mb{
+    display: block;
+}
+
+
+.left-side{
+    height: 89vh;
+    /* border: 2px solid red; */
+    overflow-x: hidden;
+}
+
+.font-color-gray {
+    color: gray;
+}
+
+.middle-part {
+    height: 89vh;
+    /* border: 2px solid green; */
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+.right-part {
+    height: 89vh;
+    /* border: 2px solid blue; */
+    overflow-x: hidden;
+}
+
+.main-content-story img {
+    width: 100%;
+    height: 30vh;
+    border-radius: 1.5rem;
+}
+
+.main-content-story h6 {
+    position: absolute;
+    bottom: 0;
+    left: 1.5rem;
+    color: white;
+}
+
+.image-left img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.image-middle img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.image-right img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.form-inline input[type = "search"] {
+    width: 95%;
+    border: 0;
+    background: #b4b4b7;
+    display: block;
+    text-align: center;
+    border: 2px solid #b4b4b7;
+    padding: 0.2rem;
+    outline: none;
+    color: #7e7e82;
+    border-radius: 1.5rem;
+    transition: 0.25s;
+}
+
+
+
+.col-md-4 img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+
+/* middle part --->  */
+
+.post img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.image {
+    width: 95%;
+}
+
+.box1 {
+    background: rgb(49, 49, 49);
+    border-radius: 1.1rem;
+    /* padding: 1rem 0; */
+    display: flex;
+    justify-content: center;
+}
+
+.container1 {
+    width: 90%;
+    padding: 1rem 0;
+}
+
+.box2 {
+    background: rgb(49, 49, 49);
+    border-radius: 1.1rem;
+    padding: 1rem 0;
+}
+
+
+
+/* right part --->  */
+
+.birthday-logo {
+    font-size: 2rem;
+}
+
+/* common css ------>  */
+
+.font_1-5rem{
+    font-size:1.5rem;
+}
+
+
+
+.main-content {
+    overflow-x: hidden;
+}
+
+@media (min-width: 976px) {
+
+    /* navbar ------>  */
+    .nav-bar-not-responsive {
+        display: block;
+    }
+    .nav-bar-responsive {
+        display: none;
+    }
+
+    .nav-bar-responsive .navbar a i {
+        font-size: 1.2rem;
+    }
+
+    /* main content ---->  */
+    .responsive-976px{
+        display: block;
+        width: 100vw;
+    }
+
+    .responsive-975px {
+        display: none;
+    }
+
+    .responsive-580px{
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 975px){
+
+    /* navbar ------>  */
+    .nav-bar-not-responsive {
+        display: none;
+    }
+    .nav-bar-responsive {
+        display: block;
+        background: rgb(41, 41, 41);
+    }
+
+
+    .responsive-976px{
+        display: none;
+    }
+
+    .responsive-975px {
+        display: block;
+        width: 100vw;
+    }
+
+    .responsive-580px{
+        display: none;
+    }
+
+    .image-right img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .button div button {
+        font-size: 0.6em;
+    }
+
+    .font-14px {
+        font-size : 14px;
+    }
+
+    .font-10px {
+        font-size : 10px;
+    }
+}
+
+
+@media (max-width: 580px){
+
+    .responsive-976px{
+        display: none;
+    }
+
+    .responsive-975px {
+        display: none;
+    }
+    .responsive-580px {
+        display: block;
+        width: 100vw;
+    }
+
+    .font-10px {
+        font-size : 10px;
+    }
+
+    .font-14px {
+        font-size : 14px;
+    }
+
+
+
+    .main-content-story img {
+        width: 100%;
+        height: 23vh;
+        border-radius: 1.5rem;
+    }
+
+    .post img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+
