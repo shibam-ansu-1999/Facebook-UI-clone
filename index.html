@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook-clone by Ansu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleapp.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</head>
+
+
+
+
+
+<body style="background: rgb(31, 30, 30);">
+
+    <nav class="nav-bar-not-responsive">
+
+        <div class="row navbar navbar-expand-lg">
+
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-2 col-sm-12">
+                        <a class="navbar-brand" href="#"><i class="fab fa-facebook font_1-5rem text-primary"></i></a>
+                    </div>
+                    <div class="col-md-10 nav-bar-search">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search Facebook">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+
+                <div class="row">
+
+                    <div class="col-md-7 middle-item">
+
+                        <div class="row">
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-2">
+                                <a class="nav-link" href="#">
+                                    <i class="fas fa-home active font_1-5rem"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-2">
+                                <a class="nav-link font-color-gray" href="#">
+                                    <i class="fas fa-tv inactive font_1-5rem"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-2">
+                                <a class="nav-link font-color-gray" href="#">
+                                    <i class="fas fa-store inactive font_1-5rem"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-2">
+                                <a class="nav-link font-color-gray" href="#">
+                                    <i class="fas fa-users inactive font_1-5rem"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-2">
+                                <a class="nav-link font-color-gray" href="#">
+                                    <i class="fas fa-flag inactive font_1-5rem"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-1"></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-5 nav-bar-options">
+
+                        <div class="row">
+
+                            <div class="col-md-1">
+                                <a class="nav-link font-color-gray" href="#">
+                                    <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                        alt="" class="rounded-circle" role="button" style="height: 5vh;width: 5vh;">
+                                </a>
+                            </div>
+
+                            <div class="col-md-2" style="text-align: center">
+                                <a class="nav-link font-color-gray" href="#">
+                                    <h6 style="color: aliceblue;">Shibam Ansu</h6>
+                                </a>
+                            </div>
+
+                            <div class="col-md-2">
+                                <a class="nav-link font-color-gray" href="#">
+                                    <i class="fas fa-plus-circle font_1-5rem"></i>
+                                </a>
+                            </div>
+
+                            <div class="col-md-2">
+                                <a class="nav-link font-color-blue" href="#">
+                                    <i class="fab fa-facebook-messenger font_1-5rem"><sup
+                                            style="color: red; font-size: 1.5rem">4</sup></i>
+                                </a>
+                            </div>
+
+                            <div class="col-md-2">
+                                <a class="nav-link font-color-gray" href="#">
+                                    <i class="fas fa-bell font_1-5rem"></i>
+                                </a>
+                            </div>
+
+                            <div class="col-md-2">
+
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item drop-item">
+
+
+                                        <a class="nav-link font-color-gray" id="navbarDropdown" href="#"><i
+                                                class="fas fa-caret-down font_1-5rem"></i></a>
+
+                                        <div class="drop-down">
+                                            <div class="row mt-3">
+
+                                                <div class="col-md-3">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                                            alt="" class="rounded-circle" role="button"
+                                                            style="width: 7vh;height: 7vh">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-9 d-flex align-items-center">
+                                                    <h5 class="text-white" role="button" role="button">Shibam Ansu Santy
+                                                        Hazra</h5><br>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4"></div>
+                                                <div
+                                                    class="col-md-8 text-muted  justify-content-center align-items-center">
+                                                    <h6>See Your Profile</h6>
+                                                </div>
+                                            </div>
+
+                                            <hr style="background-color: rgb(92, 92, 92);">
+
+                                            <div class="row mt-2">
+
+                                                <div class="col-md-3">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <i class="fas fa-comment-alt font_1-5rem font-color-gray"
+                                                            role="button"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-9 flex-column d-flex">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <h6 class="text-white" role="button">Give Feedback</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <h6><small class="text-muted" role="button">Help us improve
+                                                                    the new Facebook</small></h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr style="background-color: rgb(92, 92, 92);">
+
+                                            <div class="row mt-3">
+                                                <div class="col-md-3">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <i class="fas fa-cog font_1-5rem font-color-gray"
+                                                            role="button"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-7 flex-column d-flex">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <h6 class="text-white" role="button">Settings</h6>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-2 flex-column d-flex align-items-center">
+                                                    <div class="row">
+                                                        <i class="fas fa-chevron-right font_1-5rem font-color-gray"
+                                                            role="button"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row mt-2">
+                                                <div class="col-md-3">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <i class="fas fa-question-circle font_1-5rem font-color-gray"
+                                                            role="button"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-7 flex-column d-flex">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <h6 class="text-white" role="button">Help</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-2 flex-column d-flex align-items-center">
+                                                    <div class="row">
+                                                        <i class="fas fa-chevron-right font_1-5rem font-color-gray"
+                                                            role="button"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mt-2">
+                                                <div class="col-md-3">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <i class="fas fa-adjust font_1-5rem font-color-gray"
+                                                            role="button"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-7 flex-column d-flex">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <h6 class="text-white" role="button">Dark mode</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-2 flex-column d-flex align-items-center">
+                                                    <div class="row">
+                                                        <i class="fas fa-toggle-on font_1-5rem font-color-gray"
+                                                            style="color: rgb(76, 76, 226)" role="button"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr style="background-color: rgb(92, 92, 92);">
+
+                                            <div class="row mt-2 classic-facebook">
+                                                <div class="col-md-3">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <i class="fas fa-arrow-circle-left font_1-5rem font-color-gray"
+                                                            role="button"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-9 flex-column d-flex">
+                                                    <div class="row">
+                                                        <h6 class="text-white" role="button">Switch to classic Facebook
+                                                        </h6>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <p class="text-muted" role="button"><small>The classic Facebook
+                                                                will no longer be available<br> starting in
+                                                                September</small></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr style="background-color: rgb(92, 92, 92);">
+
+                                            <div class="row mt-2">
+                                                <div class="col-md-3">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <i class="fas fa-sign-out-alt font_1-5rem font-color-gray"
+                                                            role="button"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-7 flex-column d-flex">
+                                                    <div class="row">
+                                                        <h6 class="text-white" role="button">Log Out</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mt-2 mb-3 classic-facebook">
+                                                <div class="col-md-1"></div>
+                                                <div class="col-md-10">
+                                                    <div class="">
+                                                        <small class="text-muted" role="button">Privacy</small>
+                                                        <small class="text-muted" role="button">.</small>
+                                                        <small class="text-muted" role="button">Terms</small>
+                                                        <small class="text-muted" role="button">.</small>
+                                                        <small class="text-muted" role="button">Advertising</small>
+                                                        <small class="text-muted" role="button">.</small>
+                                                        <small class="text-muted" role="button">Add Choices</small>
+                                                        <small class="text-muted" role="button">.</small>
+                                                        <small class="text-muted" role="button">Cookies</small>
+                                                        <small class="text-muted" role="button">.</small>
+                                                        <small class="text-muted" role="button">More</small>
+                                                        <small class="text-muted" role="button">.</small>
+                                                        <small class="text-muted" role="button">Facebook</small>
+                                                        <small class="text-muted" role="button">.</small>
+                                                        <small class="text-muted" role="button">&#169; 2020</small>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-1">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- for  mobile-responsive navbar ----->
+
+    <nav class="nav-bar-responsive">
+        <div class=" navbar navbar-expand-lg d-flex flex-nowrap justify-content-around align-items-center">
+            <a class="navbar-brand" href="#"><i class="fab fa-facebook fa-2x text-primary"></i></a>
+
+            <a class="nav-link" href="#"><i class="fas fa-home active font_1-5rem"></i></a>
+
+            <a class="nav-link font-color-gray" href="#"><i class="fas fa-tv inactive font_1-5rem"></i></a>
+
+            <a class="nav-link font-color-gray" href="#"><i class="fas fa-store inactive font_1-5rem"></i></a>
+
+            <a class="nav-link font-color-gray" href="#"><i class="fas fa-users inactive font_1-5rem"></i></a>
+
+            <a class="nav-link font-color-gray" href="#"><i class="fas fa-flag inactive font_1-5rem"></i></a>
+
+            <a class="nav-link font-color-blue" href="#">
+                <i class="fab fa-facebook-messenger font_1-5rem"><sup
+                        style="color: red; font-size: 1.5rem">4</sup></i>
+            </a>
+
+
+            <div class="col-md-2">
+
+                <ul class="navbar-nav mr-auto" id="mb-ul">
+                    <li class="nav-item drop-item">
+
+
+                        <a class="nav-link font-color-gray" id="navbarDropdown" href="#"><i
+                                class="fas fa-caret-down font_1-5rem"></i></a>
+
+                        <div class="drop-down-mb">
+                            <div class="col-md-12">
+                                <div class="row mt-3">
+                                    <div class="col-md-3">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                                alt="" class="rounded-circle" role="button"
+                                                style="width: 7vh;height: 7vh">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-9 d-flex align-items-center">
+                                        <h5 class="text-white" role="button" role="button">Shibam Ansu Santy Hazra</h5>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-8 text-muted  justify-content-center align-items-center">
+                                        <h6>See Your Profile</h6>
+                                    </div>
+                                </div>
+
+                                <hr style="background-color: rgb(92, 92, 92);">
+
+                                <div class="row mt-2">
+
+                                    <div class="col-md-9 flex-column d-flex">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h6 class="text-white" role="button">Give Feedback</h6>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h6><small class="text-muted" role="button">Help us improve the new
+                                                        Facebook</small></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr style="background-color: rgb(92, 92, 92);">
+
+                                <div class="row mt-3">
+
+                                    <div class="col-md-7 flex-column d-flex">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h6 class="text-white" role="button">Settings</h6>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="row mt-2">
+
+
+                                    <div class="col-md-7 flex-column d-flex">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h6 class="text-white" role="button">Help</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row mt-2">
+                                    <div class="col-md-7 flex-column d-flex">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h6 class="text-white" role="button">Dark mode</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <hr style="background-color: rgb(92, 92, 92);">
+
+                                <div class="row mt-2 classic-facebook">
+
+                                    <div class="col-md-9 flex-column d-flex">
+                                        <div class="row">
+                                            <h6 class="text-white ml-2" role="button">Switch to classic Facebook</h6>
+                                        </div>
+
+                                        <div class="row">
+                                            <p class="text-muted" role="button"><small>The classic Facebook will no
+                                                    longer be available<br> starting in September</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr style="background-color: rgb(92, 92, 92);">
+
+                                <div class="row mt-2">
+
+                                    <div class="col-md-7 flex-column d-flex">
+                                        <div class="row">
+                                            <h6 class="text-white ml-2" role="button">Log Out</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-2 mb-3 classic-facebook">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <div class="">
+                                            <small class="text-muted" role="button">Privacy</small>
+                                            <small class="text-muted" role="button">.</small>
+                                            <small class="text-muted" role="button">Terms</small>
+                                            <small class="text-muted" role="button">.</small>
+                                            <small class="text-muted" role="button">Advertising</small>
+                                            <small class="text-muted" role="button">.</small>
+                                            <small class="text-muted" role="button">Add Choices</small>
+                                            <small class="text-muted" role="button">.</small>
+                                            <small class="text-muted" role="button">Cookies</small>
+                                            <small class="text-muted" role="button">.</small>
+                                            <small class="text-muted" role="button">More</small>
+                                            <small class="text-muted" role="button">.</small>
+                                            <small class="text-muted" role="button">Facebook</small>
+                                            <small class="text-muted" role="button">.</small>
+                                            <small class="text-muted" role="button">&#169; 2020</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+
+
+    <!-- for responsive above 976px -------------------->
+
+    <div class="responsive-976px">
+        <div class="container-fluid">
+            <div class="row main-content">
+
+                <!-------- for left --------->
+                <div class="col-md-3 col-sm-8 left-side">
+                    <div class="row mt-2">
+                        <div class="col-md-2 col-sm-2">
+                            <div class="d-flex justify-content-center align-items-center image-left">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    alt="" class="rounded-circle" role="button">
+                            </div>
+                        </div>
+
+                        <div class="col-md-10 col-sm-10 d-flex">
+                            <h5 class="text-white" role="button" role="button">Shibam Ansu Santy Hazra</h5>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row mt-3">
+
+                        <div class="col-md-2 col-sm-2 d-flex justify-content-center align-items-center">
+                            <i class="fas fa-flag font_1-5rem" role="button" style="color:  #d61351;"></i>
+                        </div>
+
+                        <div class="col-md-10 col-sm-10 d-flex align-items-center">
+                            <h6 class="text-white" role="button">Pages</h6>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row mt-3">
+
+                        <div class="col-md-2 col-sm-2 d-flex justify-content-center align-items-center">
+                            <i class="fas fa-shield-virus font_1-5rem" role="button" style="color: purple;"></i>
+                        </div>
+
+                        <div class="col-md-10 col-sm-10 d-flex align-items-center">
+                            <h6 class="text-white" role="button">Covid-19 Information Center</h6>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row mt-3">
+
+                        <div class="col-md-2 col-sm-2 d-flex justify-content-center align-items-center">
+                            <i class="fas fa-user-friends font_1-5rem" role="button" style="color: #4944df;"></i>
+                        </div>
+
+                        <div class="col-md-10 col-sm-10 d-flex align-items-center">
+                            <h6 class="text-white" role="button">Friends</h6>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-2 col-sm-2 d-flex justify-content-center align-items-center">
+                            <i class="fas fa-users font_1-5rem" role="button" style="color:#3c07c0 ;"></i>
+                        </div>
+                        <div class="col-md-10 col-sm-10 d-flex align-items-center">
+                            <h6 class="text-white" role="button">Groups</h6>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-md-2 col-sm-2 d-flex justify-content-center align-items-center">
+                            <i class="fas fa-caret-square-down font_1-5rem" role="button" style="color:#b3b3b8;"></i>
+                        </div>
+                        <div class="col-md-10 col-sm-10 d-flex align-items-center">
+                            <h6 class="text-white" role="button">See More</h6>
+                        </div>
+                    </div>
+
+                    <hr style="background-color: rgb(92, 92, 92);">
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h5 class="text-white">Your Shortcuts</h5>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-md-2 col-sm-2 d-flex justify-content-center align-items-center">
+                            <i class="fas fa-users font_1-5rem" role="button" style="color:#b3b3b8;"></i>
+                        </div>
+
+                        <div class="col-md-10 col-sm-10 d-flex align-items-center">
+                            <h6 class="text-white" role="button">CampusX</h6>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-2">
+                        <div class="col-md-2 col-sm-2 d-flex justify-content-center align-items-center">
+                            <img class="rounded-circle" style="width: 6vh;height: 6vh"
+                                src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585">
+                        </div>
+
+                        <div class="col-md-10 d-flex align-items-center">
+                            <h6 class="text-white" role="button">Try</h6>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-2">
+                        <div class="col-md-2 d-flex justify-content-center align-items-center">
+                            <img class="rounded-circle" style="width: 6vh;height: 6vh"
+                                src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585">
+                        </div>
+
+                        <div class="col-md-10 d-flex align-items-center">
+                            <h6 class="text-white" role="button">WoWr</h6>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-2">
+                        <div class="col-md-2 d-flex justify-content-center align-items-center">
+                            <img class="rounded-circle" style="width: 6vh;height: 6vh"
+                                src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585">
+                        </div>
+
+                        <div class="col-md-10 d-flex align-items-center">
+                            <h6 class="text-white" role="button">OMG</h6>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-2">
+                        <div class="col-md-2 d-flex justify-content-center align-items-center">
+                            <img class="rounded-circle" style="width: 6vh;height: 6vh"
+                                src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585">
+                        </div>
+
+                        <div class="col-md-10 d-flex align-items-center">
+                            <h6 class="text-white" role="button">BAM</h6>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-2">
+                        <div class="col-md-2 d-flex justify-content-center align-items-center">
+                            <i class="fas fa-caret-square-down font_1-5rem" role="button" style="color:#b3b3b8;"></i>
+                        </div>
+
+                        <div class="col-md-10 d-flex align-items-center">
+                            <h6 class="text-white" role="button">See More</h6>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <!-------- for middle part --------------------->
+                <div class="col-md-6 middle-part">
+
+                    <div class="row mt-2">
+                        <div class="col-md-3 main-content-story">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                alt="">
+                            <h6 class="text-white bg-dark">Create Story</h6>
+                        </div>
+                        <div class="col-md-3 main-content-story">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                alt="">
+                            <h6 class="text-white bg-dark">Ena</h6>
+                        </div>
+                        <div class="col-md-3 main-content-story">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                alt="">
+                            <h6 class="text-white bg-dark">Mina</h6>
+                        </div>
+                        <div class="col-md-3 main-content-story">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                alt="">
+                            <h6 class="text-white bg-dark">Tika</h6>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3 box1">
+
+                        <div class="container1">
+
+                            <div class="row">
+                                <div class="col-md-2 image-middle">
+                                    <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                        class="rounded-circle" alt="">
+                                </div>
+
+                                <div class="col-md-10">
+                                    <form action="" class="form-inline">
+                                        <input type="search" placeholder="What's on your mind,Shibam Ansu?">
+                                    </form>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <i class="fas fa-video font_1-5rem" style="color:#c41d2b;"></i>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <h6 class="text-white">Live video</h6>
+                                </div>
+
+                                <div class="col-md-1">
+                                    <i class="fas fa-image font_1-5rem" style="color: #057414;"></i>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <h6 class="text-white">Photo/Video</h6>
+                                </div>
+
+
+                                <div class="col-md-1">
+                                    <i class="far fa-smile-beam font_1-5rem" style="color:#e0d314;"></i>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <h6 class="text-white">Feelings/Activity</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3 box2">
+                        <div class="row mt-2">
+                            <div class="col-md-2 post">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    class="rounded-circle" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <h5 class="text-white">Shibam Ansu</h5>
+                                </div>
+                                <div class="row">
+                                    <h6 class="text-muted">28/08/2020</h6>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    class="image" alt="">
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-1 text-white">
+                                    <i class="fas fa-thumbs-up text-white fa-2x"></i>
+                                </div>
+                                <div class="col-md-1 text-white">Like</div>
+
+                                <div class="col-md-2"></div>
+                                <div class="col-md-1 text-white">
+                                    <i class="fas fa-comment text-white fa-2x"></i>
+                                </div>
+                                <div class="col-md-1 text-white">Comment</div>
+
+                                <div class="col-md-2"></div>
+                                <div class="col-md-1 text-white">
+                                    <i class="fa fa-share text-white fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-md-1 text-white">Share</div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-2 post">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    class="rounded-circle" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <h5 class="text-white">Shibam Ansu</h5>
+                                </div>
+                                <div class="row">
+                                    <h6 class="text-muted">28/08/2020</h6>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    class="image" alt="">
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-1 text-white">
+                                    <i class="fas fa-thumbs-up text-white fa-2x"></i>
+                                </div>
+                                <div class="col-md-1 text-white">Like</div>
+
+                                <div class="col-md-2"></div>
+                                <div class="col-md-1 text-white">
+                                    <i class="fas fa-comment text-white fa-2x"></i>
+                                </div>
+                                <div class="col-md-1 text-white">Comment</div>
+
+                                <div class="col-md-2"></div>
+                                <div class="col-md-1 text-white">
+                                    <i class="fa fa-share text-white fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-md-1 text-white">Share</div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-2 post">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    class="rounded-circle" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <h5 class="text-white">Shibam Ansu</h5>
+                                </div>
+                                <div class="row">
+                                    <h6 class="text-muted">28/08/2020</h6>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    class="image" alt="">
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-1 text-white">
+                                    <i class="fas fa-thumbs-up text-white fa-2x"></i>
+                                </div>
+                                <div class="col-md-1 text-white">Like</div>
+
+                                <div class="col-md-2"></div>
+                                <div class="col-md-1 text-white">
+                                    <i class="fas fa-comment text-white fa-2x"></i>
+                                </div>
+                                <div class="col-md-1 text-white">Comment</div>
+
+                                <div class="col-md-2"></div>
+                                <div class="col-md-1 text-white">
+                                    <i class="fa fa-share text-white fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-md-1 text-white">Share</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- for right part -------------------->
+                <div class="col-md-3 right-part">
+
+                    <div class="row">
+
+                        <div class="col-md-8">
+                            <h5 class="float-left text-white">Friend Requests</h5>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h6 class="text-primary" role="button">See All</h6>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-2 image-right">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                class="rounded-circle" role="button" alt="">
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-8">
+                            <div class="row">
+                                <h6 class="text-white" role="button">Shibam Hazra</h6>
+                            </div>
+
+                            <div class="row">
+                                <h6><small class="text-muted">18 Mutual friends</small></h6>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-primary">Confirm</button>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-dark">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr style="background-color: rgb(92, 92, 92);">
+
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="text-white" role="button">Birthdays</h5>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <i class="fas fa-gift birthday-logo" role="button" style="color:#4316be;"></i>
+                        </div>
+
+                        <div class="col-md-10">
+                            <p class="text-white"><b role="button">Tuli Mandal</b> and <b role="button">16 others</b>
+                                have their birthdays today.</p>
+                        </div>
+                    </div>
+
+                    <hr style="background-color: rgb(92, 92, 92);">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h6 class="text-white" role="button">Contacts</h6>
+                        </div>
+
+                        <div class="col-md-4"></div>
+
+                        <div class="col-md-4">
+                            <h6 class="text-primary " role="button">See All</h6>
+                        </div>
+                    </div>
+                    <div class="row mt-1">
+                        <div class="col-md-2">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                style="width: 5vh;height: 5vh" class="rounded-circle" role="button" alt="">
+                        </div>
+
+                        <div class="col-md-1"></div>
+
+                        <div class="col-md-8">
+                            <h5 class="text-white" role="button">Shibam Hazra</h5>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-2">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                style="width: 5vh;height: 5vh" class="rounded-circle" role="button" alt="">
+                        </div>
+
+                        <div class="col-md-1"></div>
+
+                        <div class="col-md-8">
+                            <h5 class="text-white" role="button">Shibam Hazra</h5>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-2">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                style="width: 5vh;height: 5vh" class="rounded-circle" role="button" alt="">
+                        </div>
+
+                        <div class="col-md-1"></div>
+
+                        <div class="col-md-8">
+                            <h5 class="text-white" role="button">Shibam Hazra</h5>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-2">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                style="width: 5vh;height: 5vh" class="rounded-circle" role="button" alt="">
+                        </div>
+
+                        <div class="col-md-1"></div>
+
+                        <div class="col-md-8">
+                            <h5 class="text-white" role="button">Shibam Hazra</h5>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-2">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                style="width: 5vh;height: 5vh" class="rounded-circle" role="button" alt="">
+                        </div>
+
+                        <div class="col-md-1"></div>
+
+                        <div class="col-md-8">
+                            <h5 class="text-white" role="button">Shibam Hazra</h5>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-2">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                style="width: 5vh;height: 5vh" class="rounded-circle" role="button" alt="">
+                        </div>
+
+                        <div class="col-md-1"></div>
+
+                        <div class="col-md-8">
+                            <h5 class="text-white" role="button">Shibam Hazra</h5>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-2">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                style="width: 5vh;height: 5vh" class="rounded-circle" role="button" alt="">
+                        </div>
+
+                        <div class="col-md-1"></div>
+
+                        <div class="col-md-8">
+                            <h5 class="text-white" role="button">Shibam Hazra</h5>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-2">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                style="width: 5vh;height: 5vh" class="rounded-circle" role="button" alt="">
+                        </div>
+
+                        <div class="col-md-1"></div>
+
+                        <div class="col-md-8">
+                            <h5 class="text-white" role="button">Shibam Hazra</h5>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-2">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                style="width: 5vh;height: 5vh" class="rounded-circle" role="button" alt="">
+                        </div>
+
+                        <div class="col-md-1"></div>
+
+                        <div class="col-md-8">
+                            <h5 class="text-white" role="button">Shibam Hazra</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    responsive within 975px --------
+
+    <div class="responsive-975px">
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- for middle part --------------------->
+                <div class="col-md-8 col-sm-8 middle-part">
+
+                    <div class="row mt-2">
+                        <div class="col-md-3 col-sm-3 main-content-story">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                alt="">
+                            <h6 class="text-white bg-dark">Create Story</h6>
+                        </div>
+                        <div class="col-md-3 col-sm-3 main-content-story">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                alt="">
+                            <h6 class="text-white bg-dark">Ena</h6>
+                        </div>
+                        <div class="col-md-3 col-sm-3 main-content-story">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                alt="">
+                            <h6 class="text-white bg-dark">Mina</h6>
+                        </div>
+                        <div class="col-md-3 col-sm-3 main-content-story">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                alt="">
+                            <h6 class="text-white bg-dark">Tika</h6>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row mt-3 box1">
+
+                        <div class="container1">
+
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 image-middle">
+                                    <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                        class="rounded-circle" alt="">
+                                </div>
+
+                                <div class="col-md-10 col-sm-10">
+                                    <form action="" class="form-inline">
+                                        <input type="search" placeholder="What's on your mind,Shibam Ansu?">
+                                    </form>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="row">
+                                <div class="col-md-1 col-sm-1">
+                                    <i class="fas fa-video font_1-5rem" style="color:#c41d2b;"></i>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3">
+                                    <h6 class="text-white">Live video</h6>
+                                </div>
+
+                                <div class="col-md-1 col-sm-1">
+                                    <i class="fas fa-image font_1-5rem" style="color: #057414;"></i>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3">
+                                    <h6 class="text-white">Photo/Video</h6>
+                                </div>
+
+
+                                <div class="col-md-1 col-sm-1">
+                                    <i class="far fa-smile-beam font_1-5rem" style="color:#e0d314;"></i>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3">
+                                    <h6 class="text-white">Feelings/Activity</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-3 box2">
+                        <div class="row mt-2">
+                            <div class="col-md-2 col-sm-2 post">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    class="rounded-circle" alt="">
+                            </div>
+                            <div class="col-md-6 col-sm-2">
+                                <div class="row">
+                                    <h5 class="text-white">Shibam Ansu</h5>
+                                </div>
+                                <div class="row">
+                                    <h6 class="text-muted">28/08/2020</h6>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    class="image" alt="">
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-2 col-sm-2"></div>
+                                <div class="col-md-1 col-sm-1 text-white">
+                                    <i class="fas fa-thumbs-up text-white fa-2x"></i>
+                                </div>
+                                <div class="col-md-1 col-sm-1 text-white">Like</div>
+
+                                <div class="col-md-2 col-sm-2"></div>
+                                <div class="col-md-1 col-sm-1 text-white">
+                                    <i class="fas fa-comment text-white fa-2x"></i>
+                                </div>
+                                <div class="col-md-1 col-sm-1 text-white">Comment</div>
+
+                                <div class="col-md-2 col-sm-2"></div>
+                                <div class="col-md-1 col-sm-1 text-white">
+                                    <i class="fa fa-share text-white fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-md-1 col-sm-1 text-white">Share</div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-2 col-sm-2 post">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    class="rounded-circle" alt="">
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="row">
+                                    <h5 class="text-white">Shibam Ansu</h5>
+                                </div>
+                                <div class="row">
+                                    <h6 class="text-muted">28/08/2020</h6>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    class="image" alt="">
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-2 col-sm-2"></div>
+                                <div class="col-md-1 col-sm-1 text-white">
+                                    <i class="fas fa-thumbs-up text-white fa-2x"></i>
+                                </div>
+                                <div class="col-md-1 col-sm-1 text-white">Like</div>
+
+                                <div class="col-md-2 col-sm-2"></div>
+                                <div class="col-md-1 col-sm-1 text-white">
+                                    <i class="fas fa-comment text-white fa-2x"></i>
+                                </div>
+                                <div class="col-md-1 col-sm-1 text-white">Comment</div>
+
+                                <div class="col-md-2 col-sm-2"></div>
+                                <div class="col-md-1 col-sm-1 text-white">
+                                    <i class="fa fa-share text-white fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-md-1 col-sm-1 text-white">Share</div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-2 col-sm-2 post">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    class="rounded-circle" alt="">
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="row">
+                                    <h5 class="text-white">Shibam Ansu</h5>
+                                </div>
+                                <div class="row">
+                                    <h6 class="text-muted">28/08/2020</h6>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    class="image" alt="">
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-2 col-sm-2"></div>
+                                <div class="col-md-1 col-sm-2 text-white">
+                                    <i class="fas fa-thumbs-up text-white fa-2x"></i>
+                                </div>
+                                <div class="col-md-1 col-sm-1 text-white">Like</div>
+
+                                <div class="col-md-2 col-sm-2"></div>
+                                <div class="col-md-1 col-sm-1 text-white">
+                                    <i class="fas fa-comment text-white fa-2x"></i>
+                                </div>
+                                <div class="col-md-1 col-sm-1 text-white">Comment</div>
+
+                                <div class="col-md-2 col-sm-2"></div>
+                                <div class="col-md-1 col-sm-1 text-white">
+                                    <i class="fa fa-share text-white fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-md-1 col-sm-1 text-white">Share</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- for right part -------------------->
+                <div class="col-md-4 col-sm-4 right-part">
+
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-md-8 col-sm-8">
+                                <h5 class="float-left text-white">Friend Requests</h5>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4">
+                                <h6 class="text-primary" role="button">See All</h6>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-2 col-sm-2 image-right">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    class="rounded-circle" role="button" alt="">
+                            </div>
+                            <div class="col-md-1 col-sm-1"></div>
+                            <div class="col-md-8 col-sm-8">
+                                <div class="row">
+                                    <h6 class="text-white" role="button">Shibam Hazra</h6>
+                                </div>
+
+                                <div class="row">
+                                    <h6><small class="text-muted">18 Mutual friends</small></h6>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <button type="button" class="btn btn-primary">Confirm</button>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6">
+                                        <button type="button" class="btn btn-dark">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr style="background-color: rgb(92, 92, 92);">
+
+
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <h5 class="text-white" role="button">Birthdays</h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2 col-sm-2">
+                                <i class="fas fa-gift birthday-logo" role="button" style="color:#4316be;"></i>
+                            </div>
+
+                            <div class="col-md-10 col-sm-10">
+                                <p class="text-white"><b role="button">Tuli Mandal</b> and <b role="button">16
+                                        others</b>
+                                    have their birthdays today.</p>
+                            </div>
+                        </div>
+
+                        <hr style="background-color: rgb(92, 92, 92);">
+
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                                <h6 class="text-white" role="button">Contacts</h6>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4"></div>
+
+                            <div class="col-md-4 col-sm-4">
+                                <h6 class="text-primary " role="button">See All</h6>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-md-2 col-sm-2">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    style="width: 5vh;height: 5vh" class="rounded-circle" role="button" alt="">
+                            </div>
+
+                            <div class="col-md-1 col-sm-1"></div>
+
+                            <div class="col-md-8 col-sm-8">
+                                <h5 class="text-white" role="button">Shibam Hazra</h5>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-2 col-sm-2">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    style="width: 5vh;height: 5vh" class="rounded-circle" role="button" alt="">
+                            </div>
+
+                            <div class="col-md-1 col-sm-1"></div>
+
+                            <div class="col-md-8 col-sm-8">
+                                <h5 class="text-white" role="button">Shibam Hazra</h5>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-2 col-sm-2">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    style="width: 5vh;height: 5vh" class="rounded-circle" role="button" alt="">
+                            </div>
+
+                            <div class="col-md-1 col-sm-1"></div>
+
+                            <div class="col-md-8 col-sm-8">
+                                <h5 class="text-white" role="button">Shibam Hazra</h5>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-2 col-sm-2">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    style="width: 5vh;height: 5vh" class="rounded-circle" role="button" alt="">
+                            </div>
+
+                            <div class="col-md-1 col-sm-1"></div>
+
+                            <div class="col-md-8 col-sm-8">
+                                <h5 class="text-white" role="button">Shibam Hazra</h5>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-2 col-sm-2">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    style="width: 5vh;height: 5vh" class="rounded-circle" role="button" alt="">
+                            </div>
+
+                            <div class="col-md-1 col-sm-1"></div>
+
+                            <div class="col-md-8 col-sm-8">
+                                <h5 class="text-white" role="button">Shibam Hazra</h5>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-2 col-sm-2">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    style="width: 5vh;height: 5vh" class="rounded-circle" role="button" alt="">
+                            </div>
+
+                            <div class="col-md-1 col-sm-1"></div>
+
+                            <div class="col-md-8 col-sm-8">
+                                <h5 class="text-white" role="button">Shibam Hazra</h5>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-2 col-sm-8">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    style="width: 5vh;height: 5vh" class="rounded-circle" role="button" alt="">
+                            </div>
+
+                            <div class="col-md-1 col-sm-1"></div>
+
+                            <div class="col-md-8 col-sm-8">
+                                <h5 class="text-white" role="button">Shibam Hazra</h5>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-2 col-sm-2">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    style="width: 5vh;height: 5vh" class="rounded-circle" role="button" alt="">
+                            </div>
+
+                            <div class="col-md-1 col-sm-1"></div>
+
+                            <div class="col-md-8 col-sm-8">
+                                <h5 class="text-white" role="button">Shibam Hazra</h5>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-2 col-sm-2">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    style="width: 5vh;height: 5vh" class="rounded-circle" role="button" alt="">
+                            </div>
+
+                            <div class="col-md-1 col-sm-1"></div>
+
+                            <div class="col-md-8 col-sm-8">
+                                <h5 class="text-white" role="button">Shibam Hazra</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- responsive within 580px --------  -->
+
+
+    <div class="responsive-580px">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12  middle-part">
+                    <div class="row mt-2">
+                        <div class="col-3 main-content-story">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                alt="">
+                            <h6 class="text-white bg-dark">Create Story</h6>
+                        </div>
+                        <div class="col-3 main-content-story">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                alt="">
+                            <h6 class="text-white bg-dark">Ena</h6>
+                        </div>
+                        <div class="col-3 main-content-story">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                alt="">
+                            <h6 class="text-white bg-dark">Mina</h6>
+                        </div>
+                        <div class="col-3 main-content-story">
+                            <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                alt="">
+                            <h6 class="text-white bg-dark">Tika</h6>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row mt-3 box1">
+
+                        <div class="container1">
+
+                            <div class="row">
+                                <div class="col-2 image-middle">
+                                    <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                        class="rounded-circle" alt="">
+                                </div>
+
+                                <div class="col-10">
+                                    <form action="" class="form-inline">
+                                        <input type="search" placeholder="What's on your mind,Shibam Ansu?">
+                                    </form>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="row">
+                                <div class="col-1 col-sm-1">
+                                    <i class="fas fa-video font_1-5rem" style="color:#c41d2b;"></i>
+                                </div>
+
+                                <div class="col-3">
+                                    <h6 class="text-white">Live video</h6>
+                                </div>
+
+                                <div class="col-1">
+                                    <i class="fas fa-image font_1-5rem" style="color: #057414;"></i>
+                                </div>
+
+                                <div class="col-3">
+                                    <h6 class="text-white">Photo/Video</h6>
+                                </div>
+
+
+                                <div class="col-1">
+                                    <i class="far fa-smile-beam font_1-5rem" style="color:#e0d314;"></i>
+                                </div>
+
+                                <div class="col-3">
+                                    <h6 class="text-white">Feelings/Activity</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-3 box2">
+                        <div class="row mt-2">
+                            <div class="col-2 post">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    class="rounded-circle" alt="">
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <h5 class="text-white">Shibam Ansu</h5>
+                                </div>
+                                <div class="row">
+                                    <h6 class="text-muted">28/08/2020</h6>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    class="image" alt="">
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-2"></div>
+                                <div class="col-1 text-white">
+                                    <i class="fas fa-thumbs-up text-white fa-2x"></i>
+                                </div>
+                                <div class="col-1 text-white">Like</div>
+
+                                <div class="col-2"></div>
+                                <div class="col-1 text-white">
+                                    <i class="fas fa-comment text-white fa-2x"></i>
+                                </div>
+                                <div class="col-1 text-white">Comment</div>
+
+                                <div class="col-2"></div>
+                                <div class="col-1 text-white">
+                                    <i class="fa fa-share text-white fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-1 text-white">Share</div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-2 post">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    class="rounded-circle" alt="">
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <h5 class="text-white">Shibam Ansu</h5>
+                                </div>
+                                <div class="row">
+                                    <h6 class="text-muted">28/08/2020</h6>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    class="image" alt="">
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-2"></div>
+                                <div class="col-1 text-white">
+                                    <i class="fas fa-thumbs-up text-white fa-2x"></i>
+                                </div>
+                                <div class="col-1 text-white">Like</div>
+
+                                <div class="col-2"></div>
+                                <div class="col-1 text-white">
+                                    <i class="fas fa-comment text-white fa-2x"></i>
+                                </div>
+                                <div class="col-1 text-white">Comment</div>
+
+                                <div class="col-2"></div>
+                                <div class="col-1 text-white">
+                                    <i class="fa fa-share text-white fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-1 text-white">Share</div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-2 post">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    class="rounded-circle" alt="">
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <h5 class="text-white">Shibam Ansu</h5>
+                                </div>
+                                <div class="row">
+                                    <h6 class="text-muted">28/08/2020</h6>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <img src="https://scontent.fccu9-1.fna.fbcdn.net/v/t1.0-9/118615102_1237385703281742_5073355109850943380_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=ETXIC3qRtEsAX-pY6Nz&_nc_ht=scontent.fccu9-1.fna&oh=91dccb9c3553c8e3e2c9d86c97fd9bdd&oe=5F6EF585"
+                                    class="image" alt="">
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-2"></div>
+                                <div class="col-1 text-white">
+                                    <i class="fas fa-thumbs-up text-white fa-2x"></i>
+                                </div>
+                                <div class="col-1 text-white">Like</div>
+
+                                <div class="col-2"></div>
+                                <div class="col-1 text-white">
+                                    <i class="fas fa-comment text-white fa-2x"></i>
+                                </div>
+                                <div class="col-1 text-white">Comment</div>
+
+                                <div class="col-2"></div>
+                                <div class="col-1 text-white">
+                                    <i class="fa fa-share text-white fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-1 text-white">Share</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
